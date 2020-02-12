@@ -17,4 +17,5 @@ if __name__ == '__main__':
     # From object to string
     print('dumping object to text:')
     obj['new-value'] = 'secret'
-    print(json.dumps(obj))
+    print(json.dumps(obj, sort_keys=True, indent=4))
+    
